@@ -1,0 +1,842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Coupon</title>
+<link href="css/coupon.css" rel="stylesheet" type="text/css" />
+<!--top-slider-->
+<script type="text/javascript" src="js/sliderman.1.3.6.js"></script>
+<!--top-slider-->
+<!--client-slider-->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+var my_time=1100;
+</script>
+<script src="js/jquery-slider.js" type="text/javascript"></script>
+<!--client-slider-->
+
+
+</head>
+
+<body>
+<!--wrapper-start-->
+<div class="wrapper"> 
+  <!--header-start-->
+  <div class="header"> 
+    <!--top-logo-->
+    <div class="logo-area">
+      <div class="header-inner">
+        <div class="logo-left"><a href="#"><img src="images/coupon-logo.jpg" width="153" height="66" alt="coupon-logo" /></a></div>
+        <div class="logo-right">
+          <div class="left-search">
+            <input class="select-search" value="Search for your favourite merchant, product or category" onfocus="if(this.value === 'Search for your favourite merchant, product or category') this.value = '';" onblur="if(this.value === '') this.value = 'Search for your favourite merchant, product or category';"  name="search" type="text" />
+          </div>
+          <div class="left-search-btn">
+            <button class="btn-search"> <i class="fa fa-search"></i> </button>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <!--top-logo--> 
+    
+    <!--top-menu-->
+    <div class="header-inner">
+      <div class="menu-bag">
+        <div class="menu-home"><a href="#"><img src="images/home-icon.png" width="22" height="23" style=" margin-top:9px;" alt="home" /></a></div>
+        <div class="menu-category">
+			<ul id="menutop">
+    <li style="width:141px; text-align:center; color:#FFF; padding:0px !important;"><a href="#"  style=" background-color:#00496f; height:40px; font-size:14px; font-family:'Open Sans',sans-serif; line-height:40px; padding:0px 15px 0px 15px; "> All Categories <i class="fa fa-chevron-down"></i></a>
+
+        <ul class="sub-menu">
+            <li><a href="#">Adult</a></li>
+<li><a href="#">Books &amp; Stationary</a></li>
+<li><a href="#">Entertainment</a></li>
+<li><a href="#">Home Furnishing &amp; Decor</a></li>
+<li><a href="#">Recharge</a></li>
+<li><a href="#">Web Hosting &amp; Domains</a></li>
+<li><a href="#">Appliances</a></li>
+<li><a href="#">Camera &amp; Accessories</a></li>
+<li><a href="#">Fashion</a></li>
+<li><a href="#">Kids,Babies &amp; Toys</a></li>
+<li><a href="#">Sports &amp; Fitness</a></li>
+<li><a href="#">Education &amp Learning</a></li>
+<li><a href="#">Automotive</a></li>
+<li><a href="#">Computer, Laptops &amp; Gaming</a></li>
+<li><a href="#">Flowers, Gifts &amp; Jewellery</a></li>
+<li><a href="#">Miscellaneous</a></li>
+<li><a href="#">Travel</a></li>
+<li><a href="#">Automotive</a></li>
+<li><a href="#">Beauty &amp; Health</a></li>
+<li><a href="#">Education &amp; Learning</a></li>
+<li><a href="#">Food &amp; Dining</a></li>
+<li><a href="#">Mobile &amp; Tablets</a></li>
+<li><a href="#">TV, Audio/Video &amp; Movies</a></li>
+<li><a href="#">home furnishing &amp Decor</a></li>
+        </ul>
+    </li>
+</ul>
+</div> 
+        
+        <div id="menu">
+          <ul>
+            <li><a href="#">Mobiles &amp; Tablets</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Food &amp; Dining</a></li>
+            <li><a href="#">Computers, Laptops &amp; Gaming</a></li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </div>
+        <div class=" menu-topoffers"><a href="#">Top Offers</a></div>
+        <div class="single-category">
+        	<div class="language">
+            <ul class="menu-user">
+              <li><a href="" class="user-arrow">Username <i class="fa fa-chevron-down"></i></a>
+                <ul>
+                    <li><a href="#">Profile</a></li>
+        			<li><a href="#">Submit A Coupon</a></li>
+        			<li><a href="#">Account Preferences</a></li>
+        			<li><a href="#">Community</a></li>
+            		<li><a href="#">Sign Out</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- end .menu --> 
+          </div>
+        </div>
+        <!--drop-menu-->
+        <div class="drop-menu" style="display:none;">
+        	<div class="drop-menu-outer">
+            	<div id="dropmenu">
+                	<ul>
+                        <li><a href="#">Adult</a></li>
+                        <li><a href="#">Books &amp; Stationary</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Home Furnishing &amp; Decor</a></li>
+                        <li><a href="#">Recharge</a></li>
+                        <li><a href="#">Web Hosting &amp; Domains</a></li>
+                        <li><a href="#">Appliances</a></li>
+                        <li><a href="#">Camera &amp; Accessories</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Kids,Babies &amp; Toys</a></li>
+                        <li><a href="#">Sports &amp; Fitness</a></li>
+                        <li><a href="#">Education &amp Learning</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Computer, Laptops &amp; Gaming</a></li>
+                        <li><a href="#">Flowers, Gifts &amp; Jewellery</a></li>
+                        <li><a href="#">Miscellaneous</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Automotive</a></li>
+                        <li><a href="#">Beauty &amp; Health</a></li>
+                        <li><a href="#">Education &amp; Learning</a></li>
+                        <li><a href="#">Food &amp; Dining</a></li>
+                        <li><a href="#">Mobile &amp; Tablets</a></li>
+                        <li><a href="#">TV, Audio/Video &amp; Movies</a></li>
+                        <li><a href="#">home furnishing &amp Decor</a></li>
+                        <div class="clr"></div>
+                    </ul>
+                </div>
+            <div class="clr"></div>    
+            </div>
+        </div>
+        <!--drop-menu-->
+        <div class="clr"></div>
+      </div>
+    </div>
+    <!--top-menu--> 
+    
+    <!--top-slider-->
+    <div class="slider-inner">
+    	<div id="slider_container_1">
+          <div id="SliderName"> 
+          <a href="#"><img src="images/slider.jpg" width="1170" height="354" alt="slide" /></a> 
+          <a href="#"><img src="images/slider2.jpg" width="1170" height="354" alt="slide" /></a> 
+          <a href="#"><img src="images/slider.jpg" width="1170" height="354" alt="slide" /></a> 
+          <a href="#"><img src="images/slider2.jpg" width="1170" height="354" alt="slide" /></a> 
+          <a href="#"><img src="images/slider.jpg" width="1170" height="354" alt="slide" /></a> 
+          </div>
+          <div id="SliderNameNavigation"></div>
+          <script type="text/javascript">
+
+					// we created new effect and called it 'demo01'. We use this name later.
+					Sliderman.effect({name: 'demo02', cols: 10, rows: 5, delay:10, fade: true, order: 'straight_stairs'});
+
+					var demoSlider = Sliderman.slider({container: 'SliderName', width:1170, height:354, effects: 'demo02',
+					display: {
+						pause: true, // slider pauses on mouseover
+						autoplay:3000, // 3 seconds slideshow
+						always_show_loading: 200, // testing loading mode
+						description: {background: '#ffffff', opacity: 0.5, height: 50, position: 'bottom'}, // image description box settings
+						loading: {background: '#000000', opacity: 0.2, image: 'images/loading.gif'}, // loading box settings
+						buttons: {opacity: 1, prev: {className: 'SliderNamePrev', label: ''}, next: {className: 'SliderNameNext', label: ''}}, // Next/Prev buttons settings
+						navigation: {container:'SliderNameNavigation', label: '&nbsp;'} // navigation (pages) settings
+					}});
+
+				</script>
+        </div>
+    </div>
+    <!--top-slider-->
+    
+    <div class="clr"></div>
+  </div>
+  <!--header-end--> 
+  
+  <!--contain-start-->
+  <div class="contain"> 
+    <!--inner-->
+    <div class="product-log-top">
+      <div class="product-logo-bag">
+        <div class="product-log-inner">
+         <div id="mcts1">
+           <a href="#"><img src="images/logo1.jpg" alt="partner_1" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_2" height="87" width="161" /></a>
+           <a href="abc.php"><img src="images/logo1.jpg" alt="partner_3" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_4" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_5" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_6" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_1" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_2" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_3" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_4" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_5" height="87" width="161" /></a>
+           <a href="#"><img src="images/logo1.jpg" alt="partner_6" height="87" width="161" /></a>
+        </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+    </div>
+    <div class="new-coupon-inner"> 
+      <!--contain-left-->
+      <div class="contain-left">
+        <div class="co-pages">
+          <div class="new-heading">
+            <div class="new-heading-inner">
+              <div class="new-heading-main-head"><img src="images/se-icon.jpg" width="30" height="20" alt="icon" /> </div>
+              <div class="new-heading-main-head-left">New Coupons</div>
+              <div class="new-heading-main-head-right">There are currently <span>87</span> active coupons</div>
+              <div class="clr"></div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <div class="co-pages" style=" padding-bottom:0px;"> 
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box-->
+          <!--main-box-->
+          <div class="product-outre">
+            <div class="product-left"><a href="#"><img src="images/phone.jpg" width="147" height="149" alt="product" /></a></div>
+            <div class="product-right">
+              <div class="product-right-innet-left">
+                <div class="product-titme"><a href="#">Cabod (TM) Stylish High School College Students Books Computer... </a></div>
+                <div class="product-desk">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto...</div>
+                
+                <div class="product-inner-price">
+                  <div class="product-code-left">PRICE :</div>
+                  <div class="product-code-left"> <div class="product-dollar"><span>$</span>79.00</div> </div>
+                  <div class="clr"></div>
+                </div>
+                
+                <div class="product-code">
+                  <div class="product-code-left">CODE :</div>
+                  <div class="product-code-left">
+                    <div class="code-btn-inner">
+                      <div class="btn-code"> <a href="#">View Coupon Code <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span> </a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="product-code-left">
+                    <div class="buy-btn-inner">
+                      <div class="btn-buy-now"> <a href="#">BUY NOW <span class="btn-code-arow"><img src="images/btn-arow.png" width="22" height="22" alt="arow" /></span></a> </div>
+                      <div class="clr"></div>
+                    </div>
+                  </div>
+                  <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+              <div class="product-right-innet-top"> 
+                <!--success-->
+                <div class="success-inner">
+                  <div class="success-title"><img src="images/ratting.jpg" width="82" height="15" alt="review" /></div>
+                  <div class="success-title">101 Review</div>
+                  <div class="success-100pur">20% Off </div>
+                  
+                  <div class="clr"></div>
+                </div>
+                <!--success--> 
+              </div>
+              <div class="clr"></div>
+              <div class="comment-box">
+                <div class="comment-box-inner"><img src="images/clock.png" width="18" height="18" alt="icon" style=" margin-top:4px;"/></div>
+                <div class="comment-box-inner" style="width:200px;"> Expires in 10 Days 30 Min </div>
+                <div class="comment-box-inner"><img src="images/comment.png" width="12" height="12" alt="comment-icon" style=" margin-top:7px;"/></div>
+                <div class="comment-box-inner" style="width:165px;">320 comments</div>
+                <div class="comment-box-inner" style="width:213px;">
+                	<div class="product-like-in">
+                    	<div class="product-like-out"><img src="images/like.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">200</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="product-unlike-in">
+                    	<div class="product-like-out"><img src="images/unlike.png" width="17" height="24" alt="like" style=" margin-top:2px;"/></div>
+                        <div class="product-like-out">02</div>
+                        <div class="clr"></div>
+                    </div>
+                    
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+              </div>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <!--main-box--> 
+          
+          <div class="clr"></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+      <!--contain-left--> 
+      
+      <!--contain-right-->
+      <div class="contain-right">
+        <div class="deily-deal-inner">
+          <div class="deily-deal-title">Daily DEALS
+            <div class="clr"></div>
+            <span>Spread the saving with Everyone!</span> </div>
+        </div>
+        
+        
+        <!--main-deal-->
+        <div class="deal-roduct">
+          <div class="deal-roduct-img"><img src="images/shoes.jpg" width="215" height="129" alt="product" /></div>
+          <div class="see-deal">
+            <div class="btn-see-deal"> <a href="#">Click to see Deal</a> </div>
+          </div>
+          <div class="deal-roduct-title">Wildcraft Laptop Backpack (Blue)</div>
+          <div class="deal-roduct-desk">At Shop Clues</div>
+          <div class="deal-roduct-price">
+            <div class="deal-roduct-price1">Rs. 12,990</div>
+            <div class="deal-roduct-pricer">Rs. 3,199</div>
+            <div class="clr"></div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <!--main-deal--> 
+        
+        <!--main-deal-->
+        <div class="deal-roduct">
+          <div class="deal-roduct-img"><img src="images/shoes.jpg" width="215" height="129" alt="product" /></div>
+          <div class="see-deal">
+            <div class="btn-see-deal"> <a href="#">Click to see Deal</a> </div>
+          </div>
+          <div class="deal-roduct-title">Wildcraft Laptop Backpack (Blue)</div>
+          <div class="deal-roduct-desk">At Shop Clues</div>
+          <div class="deal-roduct-price">
+            <div class="deal-roduct-price1">Rs. 12,990</div>
+            <div class="deal-roduct-pricer">Rs. 3,199</div>
+            <div class="clr"></div>
+          </div>
+          <div class="clr"></div>
+        </div>
+        <!--main-deal--> 
+        
+          <div class="active-inner">
+            <div class="about-heading">
+              <div class="about-inner-title">Browse By Categories <span class="title-arow"><img src="images/title-arow.png" width="20" height="21" alt="arow" /></span></div>
+            </div>
+          </div>
+          <div class="active-inner">
+            <div class="points-menu">
+              <div id="pointsmenu">
+                <ul>
+                  <li><a href="#">All Categories</a></li>
+                  <li><a href="#">Mobiles and Tablets</a></li>
+                  <li><a href="#">Food and Dining</a></li>
+                  <li><a href="#">Computers Laptop and Gaming</a></li>
+                  <li><a href="#">All Categories</a></li>
+                  <li><a href="#">Mobiles and Tablets</a></li>
+                  <li><a href="#">Food and Dining</a></li>
+                  <li><a href="#">Computers Laptop and Gaming</a></li>
+                  <li><a href="#">All Categories</a></li>
+                  <li><a href="#">Mobiles and Tablets</a></li>
+                  <li><a href="#">Food and Dining</a></li>
+                  <li><a href="#">Computers Laptop and Gaming</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="active-inner">
+            <div class="about-heading">
+              <div class="about-inner-title">Find us on Facebook <span class="title-arow"><img src="images/title-arow.png" width="20" height="21" alt="arow" /></span></div>
+            </div>
+          </div>
+          <div class="active-inner">
+            <div class="points-menu"><img src="images/facebook-share.jpg" width="252" height="359" alt="facebook-share" /></div>
+          </div>
+        
+        <div class="clr"></div>
+      </div>
+      <!--contain-right-->
+      
+      <div class="clr"></div>
+    </div>
+    <!--inner--> 
+  </div>
+  <!--contain-end--> 
+  
+  <!--footer-start-->
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footer-inner">
+        <div class="footer-social-title">Stay connected with us</div>
+        <div class="footer-social-titleimg">
+          <div class="footer-social-titleimg-left"><a href="#"><img src="images/twitter-icon.jpg" width="60" height="60" alt="twitter" /> </a> </div>
+          <div class="footer-social-titleimg-left"><a href="#"><img src="images/facebook-icon.jpg" width="60" height="60" alt="facebook" /> </a></div>
+          <div class="footer-social-titleimg-left"><a href="#"><img src="images/gplus-icon.jpg" width="60" height="60" alt="gplus" /></a></div>
+          <div class="clr"></div>
+        </div>
+        <div class="footer-link">
+          <div class="footer-link-bag">Quick Links :</div>
+          <div class="footer-link-inner"><a href="#">Home</a></div>
+          <div class="footer-link-inner"><a href="#">Contact</a></div>
+          <div class="footer-link-inner"><a href="#">Blog </a></div>
+          <div class="footer-link-inner"><a href="#">Careers </a></div>
+          <div class="footer-link-inner"><a href="#">Sitemap </a></div>
+          <div class="footer-link-inner"><a href="#">Press </a></div>
+          <div class="footer-link-inner"><a href="#">Privacy Policy </a></div>
+          <div class="footer-link-inner"><a href="#">List Your Business</a></div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+    <div class="footer-btm">Copyright &copy; 2014 Coupon. All rights reserved.</div>
+    <div class="clr"></div>
+  </div>
+  <!--footer-end--> 
+  
+</div>
+<!--wrapper-end-->
+</body>
+</html>
